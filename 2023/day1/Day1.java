@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Day1 {
+public class Day1Part1 {
     public static ArrayList<String> input = new ArrayList<String>();
     public static void main(String[] args) throws IOException {
         File file = new File("2023/day1/day1input.txt");
