@@ -8,11 +8,12 @@ public class Day1Part2 {
     public static ArrayList<String> input = new ArrayList<String>();
     public static void main(String[] args) throws IOException {
         File file = new File("2023/day1/day1input.txt");
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String st;
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String st;
 
-        while ((st = br.readLine()) != null) {
-            input.add(st);
+            while ((st = br.readLine()) != null) {
+                input.add(st);
+            }
         }
         Trebuchet2();
     }
